@@ -34,6 +34,9 @@ namespace baitap
             if (user.Equals(txtUsername.Text) && pass.Equals(txtPassword.Text))
             {
                 MessageBox.Show("Đăng nhạp thành công!");
+                Form2 form2 =new Form2();
+                form2.ShowDialog();
+                this.Close();
                
             }
             else
@@ -41,6 +44,10 @@ namespace baitap
 
         }
 
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }
