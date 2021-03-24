@@ -26,5 +26,21 @@ namespace baitap
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string user = "admin";
+            string pass = "admin";
+            if (user.Equals(txtUsername.Text) && pass.Equals(txtPassword.Text))
+            {
+                MessageBox.Show("Đăng nhạp thành công!");
+               
+            }
+            else
+                MessageBox.Show("Đăng nhập thất bại!");
+
+        }
+
     }
+
 }
